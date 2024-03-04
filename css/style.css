@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font);
+}
+
+.navbar {
+    height: 65px;
+    /* background-color: red; */
+    color: var(--main-bg-color);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-family: var(--font-2);
+    font-size: 18px;
+}
+
+.left {
+    display: flex;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    padding: 10px 0px;
+    align-items: center;
+    margin: 0px 30px;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 0px 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar ul li a:hover {
+    color: var(--main-bg-color);
+    font-weight: 500;
+}
+
+.content {
+    height: 100%;
+    /* background-color: rgb(218, 218, 237); */
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.content::after {
+    content: "";
+    position: absolute;
+    background-image: url('../img/content-bg2.jpg');
+    background-size: cover;
+    width: 100%;
+    height: inherit;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.content-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 15px;
+    padding: 0px 20px;
+}
+
+.content-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 15px;
+}
+
+.content-right img {
+    height: 340px;
+    width: 340px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.home-articles {
+    height: 1500px;
+    /* background-color: orangered; */
+    position: relative;
+}
+
+.year-box {
+    position: absolute;
+    height: 100px;
+    right: 10px;
+    top: 20px;
+}
+
+.home-articles h1 {
+    padding-left: 40px;
+    margin-top: 30px;
+}
+
+.home-article {
+    display: flex;
+    margin: 40px;
+}
+
+.home-article img {
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+}
+
+.home-article-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 40px;
+}
+
+.home-article-content a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.foot {
+    height: 30px;
+    background-color: var(--main-bg-color);
+    color: var(--secondary-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
